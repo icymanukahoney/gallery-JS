@@ -1,0 +1,349 @@
+
+body {
+  background-image: url("../img/vector-damask-seamless-pattern-background-classical-luxury-old-fashioned-damask-ornament-royal-victorian-seamless-texture-wallpapers-textile-wrapping-exquisite-floral-baroque-template_1217-326.jpg");
+  background-size: cover;
+}
+
+/* Navbar styles */
+nav {
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(191, 175, 130);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+nav h1 {
+  background-position: center;
+  color: #0d2075;
+  font-family: 'Imperial Script', cursive;
+  font-size: 50px;
+  margin: 0;
+}
+
+#img-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+#img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#toolbar {
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ebdbc3c5;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+// /* Styles for the filter form */
+#filter-form {
+  display: flex;
+  align-items: center;
+
+  input {
+    margin-right: 10px;
+  }
+}
+
+// #filter-form label {
+//   margin-right: 10px;
+// }
+
+#filter-submit {
+  display: flex;
+  align-items: center;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Styles for the search form */
+form:not(#filter-form) {
+  display: flex;
+  align-items: center;
+}
+
+#search-form {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#search-box {
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  margin-right: 10px;
+  width: 300px;
+  margin-top: 10px
+}
+
+#submit-search {
+  display: flex;
+  align-items: center;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  cursor: pointer;
+  margin-top: 10px
+}
+
+/* Icon styles */
+.bi {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+#status-update {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 5px;
+  font-family: 'Imperial Script', cursive;
+  font-size: 40px;
+  text-align: center;
+}
+
+.fancy {
+  font-size: 10px;
+  //position: relative;
+  display: flex;
+  background-color: #f2f2f2;
+  text-align: center;
+  background-image: url(https://images-na.ssl-images-amazon.com/images/I/91pNT93uauL._AC_UL210_SR210,210_.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 70px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+
+  label {
+    font-weight: bold;
+  }
+
+}
+
+/* modal-greeting */
+.modal-first {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #c2bb935b; /* transparent part of modal */
+  background-image: url("../img/install-shot-6.jpeg");
+  background-size: cover;
+}
+
+.modal-greeting {
+  background-color: hwb(0deg 100% 0% / 55%);
+  width: 600px;
+  height: 600px;
+  margin: 20% auto;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  font-family: "Forum", cursive;
+  color: black;
+  margin-top: 100px;
+  border: solid 3px #0000008a;
+}
+
+#close-button-greeting {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+  font-size: 30px;
+}
+
+.swiper {
+  width: 100%;
+  height: 500px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: solid 15px rgb(1 1 1 / 44%);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: white;
+}
+
+
+//Results
+
+#result {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.art {
+  font-family: 'Forum', cursive;
+  position: relative;
+  overflow: hidden;
+}
+
+.art::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 500px;
+  //background: url(https://images-na.ssl-images-amazon.com/images/I/91pNT93uauL._AC_UL210_SR210,210_.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.art div {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.art:hover div {
+  opacity: 1;
+}
+
+.art .posters {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+
+  border: 5px solid rgb(191, 175, 130);
+}
+
+.art h2 {
+  color: white;
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.art .showmore-button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.art .showmore-button:hover {
+  background-color: hsl(229, 59%, 78%);
+}
+
+
+/* modal */
+#modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dcd8d5;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s;
+}
+
+#modal {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-image: url('../img/stock-photo-grey-empty-wall-wooden-beige.jpeg');
+  background-size: cover;
+  border-radius:  10px;
+}
+
+#modal-content {
+  img {
+    width: 50%;
+    height: auto;
+    justify-items: center;
+    border: solid 10px #c4b76d;
+    margin-top: 50px;
+  }
+
+  p,h4 {
+    padding: 10px;
+    background-color: #e8e1d5;
+    text-align: center;
+  }
+}
+
+#close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 50px;
+}
+
+#modal-wrapper.active {
+  visibility: visible;
+  opacity: 1;
+  background-position: center;
+}

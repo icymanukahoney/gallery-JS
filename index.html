@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/main.css">
+    <title>Formative 2</title>
+</head>
+
+<body> 
+    <nav>
+      <div id="container-gallery">
+      <h1 class="title" data-aos="fade-up" data-aos-delay="${(i+1)*50}">Art Gallery</h1>
+    </div>
+    
+</nav>
+
+ <!-- toolbar -->
+ <div id="toolbar">
+  <form id="filter-form" action="">
+      <label class="fancy" for="Van Gogh">Van Gogh</label>
+      <input type="checkbox" name="Van Gogh" value="Van Gogh">
+      <label class="fancy" for="Aivazovsky">Aivazovsky</label>
+      <input type="checkbox" name="Aivazovsky" value="Aivazovsky">
+      <label class="fancy" for="Monet">Monet</label>
+      <input type="checkbox" name="Monet" value="Monet">
+      <label class="fancy" for="da Vinci">da Vinci</label>
+      <input type="checkbox" name="da Vinci" value="da Vinci">
+      <label class="fancy" for="Renoir">Renoir</label>
+      <input type="checkbox" name="Renoir" value="Renoir">
+
+      <button id="filter-submit">Vernissage<i class="bi bi-arrow-right"></i></button>
+  </form>
+  <form action="">
+      <input id="search-box" type="text" placeholder="Search...">
+      <button id="submit-search" type="submit"><i class="bi bi-search"></i></button>
+  </form>
+</div>
+<div id="status-update"></div>
+  <!--<div id="status-msg"></div> -->
+  
+
+  
+
+  <div id="result" class="active"></div>
+  
+  <!--modal number first-->
+  <div id="modal-first" class="modal-first" data-aos="fade-up" data-aos-delay="${(i+1)*40}">
+    <div class="modal-greeting">
+      <h2 data-aos="fade-up" data-aos-delay="${(i+1)*50}">Welcome to the Art Gallery</h2>
+      <div id="swiper-container"></div>
+      <!-- Your modal content goes here -->
+      <div id="close-button-greeting">x</div>
+    </div>
+  </div>
+
+  <div id="modal-wrapper">
+    <div id="modal">
+      <h2></h2>
+      <div id="close-button">x</div>
+      <div id="modal-content">
+          Here's some more content
+      </div>
+  </div>
+</div>
+
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- attach javascript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+@media screen and (min-width: 1024px) {
+    .fancy {
+        font-size: 14px;
+        width: 100px;
+        height: 80px;
+    }
+
+    #filter-submit {
+        font-size: 14px;
+        padding: 7px 15px;
+        margin-left: 10px;
+    }
+
+    #search-box {
+        width: 200px;
+        height: 30px;
+    }
+
+    #submit-search {
+        font-size: 17px;
+        padding: 6px;
+    }
+}
+
+// modal
+#modal-content {
+    img {
+      width: 350px;
+      //height: 450px;
+      height: auto;
+      justify-items: center;
+      border: solid 10px #c4b76d;
+      margin-top: 50px;
+    }
+  
+    p,h4 {
+      padding: 10px;
+      background-color: #e8e1d5;
+      text-align: center;
+    }
+  }
+  
