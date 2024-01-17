@@ -1,9 +1,9 @@
 # Formative 2.2
 ## Art Gallery - JS and SASS Project
 
-*Art Gallery JS Project - A one-page JavaScript app featuring works by famous artists. *
+*Art Gallery JS Project - A one-page JavaScript app featuring works by famous artists.*
 
-**For our project, we utilize Swiper and Modal. **
+**For our project, we utilize Swiper and Modal.**
 
 ### Users can view a list of artworks, explore details of each artwork, filter items by category (in our case, by artists), and search.
 
